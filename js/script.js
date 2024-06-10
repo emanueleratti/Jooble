@@ -220,12 +220,12 @@ function jobResearch(workPosition, geoPosition){
 }
 
 
-function createResultBox(searchResult, workPosition){
+function createResultBox(searchResult, searchCounter, workPosition){
     resultBox.classList.remove("hidden")
 
     // Inserisco il valore di input per la ricerca effettuata ed il numero di match riscontrati come risultato di ricerca visualizzato dall'utente 
     resultTitleSpan.innerText = workPosition;
-    resultCountSpan.innerText = searchResult.count;
+    resultCountSpan.innerText = searchCounter;
 
     // Ripulisco il contenuto di una eventuale ricerca precedente
     result.innerHTML = "";
@@ -251,6 +251,7 @@ submit.addEventListener("click", function() {
     let workPosition = workPositionValue.value.toLowerCase();
     let geoPosition = geoPositionValue.value.toLowerCase();
     let searchResult = jobResearch(workPosition, geoPosition);
+    let searchCounter = searchResult.count;
     // Al click richiamo la funzione di creazione del box con i risultati ottenuti
-    createResultBox(searchResult, workPosition);
+    createResultBox(searchResult, searchCounter, workPosition);
 });
