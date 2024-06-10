@@ -24,7 +24,6 @@ REQUISITI:
 */
 
 
-
 /*
 PARTE 2: 
 Nella pagina HTML, inserisci 2 input di tipo testo (uno per la location e uno per il titolo lavorativo, ricordati di diversificarli con un id) e un bottone con valore “cerca”
@@ -36,6 +35,7 @@ Puoi scegliere tu se utilizzare un semplice ul / li oppure una tabella
 Vai passo per passo e usa molti console.log per capire eventualmente dove sbagli
 SUGGERIMENTO: ti servira’ un ciclo for!
 */
+
 
 // NON MODIFICARE QUESTO ARRAY!
 const jobs = [
@@ -251,6 +251,6 @@ submit.addEventListener("click", function() {
     let workPosition = workPositionValue.value.toLowerCase();
     let geoPosition = geoPositionValue.value.toLowerCase();
     let searchResult = jobResearch(workPosition, geoPosition);
-    // Al click richiamo la funzione di creazione del box con i risultati effettivi
+    // Al click richiamo la funzione di creazione del box con i risultati ottenuti
     createResultBox(searchResult, workPosition);
 });
