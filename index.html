@@ -1,61 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>M2W4D1\D4 ESERCIZIO</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>01_JOOBLE</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css"
+    />
+    <script src="js/index.js" type="module" defer></script>
+  </head>
+  <body>
     <!-- HEADER -->
     <header>
-        <div id="logo"><img src="assets/jooble_logo.png" alt="" width="80"></div>
-        <nav id="nav">
-            <a href="#"><i class="fa-regular fa-heart"></i> Preferiti</a>
-            <a href="#">Offerte</a>
-            <a href="#">Consigli</a>
-            <a href="#"><i class="fa-regular fa-user"></i> Accedi</a>
-            <span class="separatore"></span>
-            <a href="#"><i class="fa-solid fa-bars"></i></a>
-        </nav>
+      <div id="logo">
+        <img src="assets/jooble_logo.png" alt="" width="80" />
+      </div>
+      <nav id="nav">
+        <a href="#"><i class="fa-regular fa-heart"></i> Preferiti</a>
+        <a href="#">Offerte</a>
+        <a href="#">Consigli</a>
+        <a href="#"><i class="fa-regular fa-user"></i> Accedi</a>
+        <span class="separatore"></span>
+        <a href="#"><i class="fa-solid fa-bars"></i></a>
+      </nav>
     </header>
 
     <!-- MAIN -->
     <main>
-        <!-- TITLE -->  
-        <section id="textBox">
-            <h1><span class="blue">Il tuo nuovo lavoro</span>, offerte di lavoro in Italia e nel mondo</h1>
-            <p class="md-grey">Più 181000 offerte di lavoro attuali da 1570 siti disponibili per te. Trova il tuo nuovo lavoro oggi.</p>
-        </section>
+      <!-- TITLE -->
+      <section id="textBox">
+        <h1>
+          <span class="blue">Il tuo nuovo lavoro</span>, offerte di lavoro in
+          Italia e nel mondo
+        </h1>
+        <p class="md-grey">
+          Più 1000 offerte di lavoro attuali da 1570 siti disponibili per te.
+          Trova il tuo nuovo lavoro oggi.
+        </p>
+      </section>
 
-        <!-- SEARCH -->
-        <section id="searchBox">
-            <div id="title">
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <input type="text" id="inputTitle" placeholder="Che lavoro vuoi fare">
-            </div>
-            <div id="location">
-                <i class="fa-solid fa-location-dot"></i>
-                <input type="text" id="inputLocation" placeholder="Dove">
-            </div>
-            <button type="submit" id="submit">Cerca!</button>
-        </section>
+      <!-- SEARCH -->
+      <section id="searchBox">
+        <div id="title">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" id="inputTitle" placeholder="Che cosa cerchi?" />
+        </div>
+        <div id="location">
+          <i class="fa-solid fa-location-dot"></i>
+          <input type="text" id="inputLocation" placeholder="Dove" />
+        </div>
+        <button type="submit" id="submit">Cerca!</button>
+      </section>
 
-        <!-- RESULT -->
-        <section id="resultBox" class="hidden">
-            <h2 class="md-grey">Risultato della ricerca per "<span></span>"</h2>
-            <p class="md-grey">Risultati trovati "<span></span>"</p>
-            <div id="result">
-                
-            </div>
-        </section>
+      <!-- RESULT -->
+      <section id="resultBox" class="hidden">
+        <h2 class="md-grey">Risultato della ricerca per "<span></span>"</h2>
+        <p class="md-grey">Risultati trovati "<span></span>"</p>
+        <div id="result"></div>
+      </section>
     </main>
-    
+
     <!-- FOOTER -->
-    <footer>
-       
-    </footer>
-    <script src="js/script.js"></script>
-</body>
+    <footer></footer>
+  </body>
 </html>
